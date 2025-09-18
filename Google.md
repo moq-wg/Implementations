@@ -2,7 +2,7 @@
 
 These instructions explain how to run Google's pure MoQT relay.
 
-# Download and Build instructions
+## Download and Build instructions
 
 Follow the [instructions](https://bazel.build/install) to install Bazel.
 
@@ -13,7 +13,7 @@ cd quiche
 bazel build -c opt -cxxopt=”-w” quiche:moqt_relay
 ```
 
-# Run the relay
+## Run the relay
 
 If you haven't already, you'll need to generate a certificate and key file. You can
 do so with openssl or letsencrypt.org.
@@ -50,7 +50,7 @@ it will forward all requests in a namespace that has not been PUBLISHed to this
 peer.
 ```
 
-# Connect to the relay
+## Connect to the relay
 
 The relay does not care what Path you use to connect to it.
 
@@ -58,7 +58,7 @@ The relay only supports WebTransport; it does not run over Raw QUIC.
 
 draft-14 only.
 
-# Supported functions
+## Supported functions
 
 - Accepts PUBLISH_NAMESPACE and adds the entry to its routing table.
 
@@ -68,10 +68,10 @@ the default if not in the table. *Does NOT* support relay of PUBLISH_DONE.
 - At the moment, the relay does not forward object extensions, stream FIN, or RESET,
 but this will be fixed in a matter of hours.
 
-# Public Instances
+## Public Instances
 
 Google does not operate any public instances at this time.
 
-# Bug reports
+## Bug reports
 
 Email martin.h.duke@gmail.com, or message Martin Duke on the quicdev Slack.
