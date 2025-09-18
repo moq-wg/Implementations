@@ -64,3 +64,11 @@ draft-14 only.
 
 - Forward SUBSCRIBE to one peer in the routing table for an inclusive namespace, or
 the default if not in the table. *Does NOT* support relay of PUBLISH_DONE.
+
+# Public Instances
+
+Google does not operate any public instances at this time.
+
+# Bug reports
+
+Email martin.h.duke@gmail.com, or message Martin Duke on the quicdev Slack.
