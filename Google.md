@@ -7,6 +7,7 @@ These instructions explain how to run Google's pure MoQT relay.
 Follow the [instructions](https://bazel.build/install) to install Bazel.
 
 ```
+sudo apt-get install libicu-dev
 cd <directory that will be the root of your quiche implmentation>
 git clone https://github.com/google/quiche.git
 cd quiche
